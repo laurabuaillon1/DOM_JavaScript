@@ -1,0 +1,10 @@
+let titre = document.getElementById("titre");
+titre.textContent = "Bonjour, étudiant!";
+console.log(titre);
+
+let texte = document.getElementById("texte");
+texte.style.color = "red";
+texte.style.fontSize = "18px";
+console.log(texte)
+
+
