@@ -17,14 +17,19 @@ const button = document.getElementById("addItemBtn");
 // Ajouter un écouteur d'évènement sur le bouton id="addItemBtn"
 
 button.addEventListener("click", () => {
+  const x = elements.length + 1 ;
+
   // Ajoute un élément au tableau (texte "Élément X")
-  const texte = "Elément X";
+  const texte = "Element " + x ;
+  elements.push(texte);
+  console.table(elements)
 
   //Créer une liste <li> avec le texte
   const li = document.createElement("li");
-  li.textContent = "Element X";
+  li.textContent = texte;
 
   //  Ajouter <li> dans la <ul> ayant l'id "liste"
   const liste = document.getElementById("liste");
   liste.appendChild(li);
 });
+
