@@ -4,7 +4,7 @@ console.log(titre);
 
 let texte = document.getElementById("texte");
 texte.style.color = "red";
-texte.style.fontSize = "18px";
+texte.style.fontSize = "20px";
 console.log(texte)
 
 

@@ -5,16 +5,13 @@
 // o "Pratiquer la manipulation du DOM"
 // o "Créer un projet".
 
+// Création de la div
+const div = document.getElementById("conteneur");
+
+// creation de ul
 const ul = document.createElement("ul");
 
-// 
-ul.id = "liste";
-
-const div = document.getElementById("conteneur")
-
-div.appendChild(ul);
-
-
+// Mes trois éléments li
 let li = document.createElement("li");
 li.textContent = "Apprendre JavaScript";
 ul.appendChild(li);
@@ -26,3 +23,6 @@ ul.appendChild(liNumeroDeux);
 let liNumeroTrois = document.createElement("li");
 liNumeroTrois.textContent = "Créer un projet";
 ul.appendChild(liNumeroTrois);
+
+// affichage final
+div.appendChild(ul);

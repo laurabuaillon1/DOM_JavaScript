@@ -17,7 +17,7 @@ const button = document.getElementById("addItemBtn");
 // Ajouter un écouteur d'évènement sur le bouton id="addItemBtn"
 
 button.addEventListener("click", () => {
-  const x = elements.length + 1 ;
+  const x = elements.length + 1 ; //elements.length = je recupère le longueur du tableau
 
   // Ajoute un élément au tableau (texte "Élément X")
   const texte = "Element " + x ;
@@ -33,3 +33,7 @@ button.addEventListener("click", () => {
   liste.appendChild(li);
 });
 
+
+
+//ATTENTION//
+// BIEN METTRE UTILISER LES ID DE BUTTON AU LIEU DE BUTTON
